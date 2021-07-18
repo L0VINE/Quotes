@@ -9,6 +9,7 @@ import { QuotesDetailsComponent } from './components/quotes-details/quotes-detai
 import { QuotesFormComponent } from './components/quotes-form/quotes-form.component';
 import { HighlightQuoteDirective } from './directives/highlight-quote.directive';
 import { TimeQuotePipe } from './pipes/time-quote.pipe';
+import { DirectivesDirective } from './directives.directive';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { TimeQuotePipe } from './pipes/time-quote.pipe';
     QuotesDetailsComponent,
     QuotesFormComponent,
     HighlightQuoteDirective,
-    TimeQuotePipe
+    TimeQuotePipe,
+    DirectivesDirective
   ],
   imports: [
     BrowserModule,
