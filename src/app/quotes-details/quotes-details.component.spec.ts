@@ -1,25 +1,38 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Quote } from '@angular/compiler';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-import { QuotesDetailsComponent } from './quotes-details.component';
+import { Quotes } from 'src/app/models/quotes';
 
-describe('QuotesDetailsComponent', () => {
-  let component: QuotesDetailsComponent;
-  let fixture: ComponentFixture<QuotesDetailsComponent>;
+@Component({
+  selector: 'app-quotes-details',
+  templateUrl: './quotes-details.component.html',
+  styleUrls: ['./quotes-details.component.css']
+})
+export class QuotesDetailsComponent implements OnInit {
+ 
+    @Input () quote: Quotes;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ QuotesDetailsComponent ]
-    })
-    .compileComponents();
-  });
+    @Output() deleteQuote = new EventEmitter<boolean>();
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(QuotesDetailsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    quoteDelete(deleteyes:boolean){
+        this.deleteQuote.emit(deleteyes);
+    }
+    
+  constructor() { }
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  //function that increments upvotes
+
+  upVote(){
+      this.quote.upVote++;
+  }
+
+  //function that increments downvotes
+
+  downVote(){
+      this.quote.downVote++;
+  }
+
+  ngOnInit(): void {
+  }
+
+}
