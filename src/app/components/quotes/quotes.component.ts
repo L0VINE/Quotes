@@ -19,20 +19,20 @@ export class QuotesComponent implements OnInit {
     ]
     
     //function for ading a new quote
-    addNewQuote(quote) {
+    addNewQuote(quote: any) {
        
         this.quotes.push(quote)
       }
 
     //function for toggling small text
-    toggleDetails(index) {
+    toggleDetails(index: any) {
         
         this.quotes[index].showDetails = !this.quotes[index].showDetails;
       }  
 
     //function for deleting quote
 
-    deletingQuote(deleteQuote, index){
+    deletingQuote(deleteQuote: any, index: any){
         if(deleteQuote){
             let toDelete =confirm("Are you sure you want to delete this quote?")
 
