@@ -10,7 +10,8 @@ import { Quotes } from 'src/app/models/quotes';
 })
 export class QuotesDetailsComponent implements OnInit {
  
-    @Input () quote: Quotes;
+    @Input()
+  quote!: Quotes;
 
     @Output() deleteQuote = new EventEmitter<boolean>();
 
