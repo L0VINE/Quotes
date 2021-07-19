@@ -10,12 +10,12 @@ import { Quotes } from 'src/app/models/quotes';
 export class QuotesComponent implements OnInit {
     // Quotes Array
     quotes:Quotes[]=[
-        new Quotes('Sometimes life is going to hit you in the head. Dont loose faith.','Steve Jobs','Felista Kiriinya', new Date(2020,1,23),2,1),
-        new Quotes('The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Faith Mucami',new Date(2020,3,30),4,3),
-        new Quotes('Competitions are for horses not artists','Anonymous', 'Eustine whels',new Date(2020,7,23),3,4),
-        new Quotes('If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt', 'James Racher',new Date(2020,4,10),1,0),
-        new Quotes('The way to get started is to quit talking and begin doing','Walt Disney','Harry Thunder',new Date(2020,5,9),9,2),
-        new Quotes('Life is what happens when you are making other plans','John Lennon', 'George Whither',new Date(2020,6,12),1,0),
+        new Quotes('The purpose of our lives is to be happy.',' Dalai Lama','Cynthia Lovine', new Date(2021,6,19),10,0),
+        new Quotes('Many of life’s failures are people who did not realize how close they were to success when they gave up','Thomas A. Edison','Loise Mulwa',new Date(2021,4,30),4,3),
+        new Quotes('When we do the best we can, we never know what miracle is wrought in our life or the life of another','Helen Keller', 'Stella Muthoni',new Date(2020,7,23),3,4),
+        new Quotes('Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this.','Celine Dion', 'Muthuri Mutethia',new Date(2021,4,4),1,0),
+        new Quotes('The way to get started is to quit talking and begin doing','Walt Disney','Brian Shadrack Owuor',new Date(2021,5,9),9,2),
+        new Quotes('The big lesson in life, baby, is never be scared of anyone or anything.','Frank Sinatra', 'Chemutai',new Date(2021,4,12),1,0),
     ]
     
     //function for ading a new quote

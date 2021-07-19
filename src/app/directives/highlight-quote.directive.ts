@@ -9,8 +9,8 @@ import {
   export class HighlightQuoteDirective {
   
     constructor(private elem: ElementRef) {
-      this.elem.nativeElement.style.background = "rgb(255, 0, 255)";
+      this.elem.nativeElement.style.background = "rgb(229, 204, 255)";
     }
   
   }
-// rgb(255, 0, 255)
+  
