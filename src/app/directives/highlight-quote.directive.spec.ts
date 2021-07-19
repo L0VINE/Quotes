@@ -1,3 +1,4 @@
+import { Quote } from '@angular/compiler';
 import { HighlightQuoteDirective } from './highlight-quote.directive';
 
 describe('HighlightQuoteDirective', () => {
